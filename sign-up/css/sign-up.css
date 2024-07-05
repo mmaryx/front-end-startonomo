@@ -27,11 +27,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; 
+    background-image: url('../img/background.png');
+    background-size: cover;
 }
 
 .image img {
-    width: 100%;
-    height: 100%;
+    width: 250px;
 }
 
 .form {
