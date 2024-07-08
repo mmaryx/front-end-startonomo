@@ -112,14 +112,13 @@ body {
 
 select {
     margin: 5px 0;
-    padding: 0 10px;
-    width: 238px;
+    padding: 0 10px 0;
+    width: 216px;
     height: 50px;
     border: solid 0.5px #a7a7a7;
     border-radius: 5px;
     background-color: #fff;
     color: #707070;
-    font-size: 14px;
     cursor: pointer;
 }
 
@@ -247,11 +246,43 @@ input:checked + .slider:before {
 
 /* Small Devices */
 @media only screen and (max-width: 768px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-header h1 {
+        text-align: center;
+    }
+
+    .form-header h1::after { 
+        display: none;
+    }
+
+    .form-title {
+        margin-top: 20px;
+    }
     
+    .input-group { 
+        flex-direction: column;
+    }
 
+    .group-1 {
+        max-height: 150px;
+        overflow-y: scroll;
+    }
 
+    .input-box input {
+        margin-right: 10px;
+    }
 
+    .input-box {
+        flex-direction: column;
+    }
 
+    .hide-fields .input-group-hide {
+        flex-direction: column;
+    }
 }
 
 /* Medium  Devices */
@@ -266,10 +297,5 @@ input:checked + .slider:before {
 
     .form {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #fff;
     }
 }
