@@ -7,6 +7,7 @@
     color: #8D8D8D;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -42,6 +43,10 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #fff;
+}
+
+.form-logo {
+    display: none;
 }
 
 .form-header { 
@@ -236,4 +241,35 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Media queries - Breakpoints */
+
+/* Small Devices */
+@media only screen and (max-width: 768px) {
+    
+
+
+
+
+}
+
+/* Medium  Devices */
+@media only screen and (max-width: 1024px) {
+    .image {
+        display: none;
+    }
+
+    .form-logo {
+        display: block;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
 }
