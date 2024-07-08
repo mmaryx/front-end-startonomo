@@ -145,17 +145,17 @@ select {
     background-color: #d66b00;
 }
 
-.forgot-password {
+.login-button {
     display: flex;
     flex-direction: row;
     column-gap: 7px;
 }
 
-.forgot-password .login {
+.login-button .login {
     color: #E17100;
 }
 
-.forgot-password a {
+.login-button a {
     text-decoration: none;
     font-size: 14px;
 }
