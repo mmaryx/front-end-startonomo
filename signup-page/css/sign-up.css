@@ -7,6 +7,7 @@
     color: #8D8D8D;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -42,6 +43,10 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #fff;
+}
+
+.form-logo {
+    display: none;
 }
 
 .form-header { 
@@ -107,22 +112,14 @@ body {
 
 select {
     margin: 5px 0;
-    padding: 0 10px;
-    width: 238px;
+    padding: 0 10px 0;
+    width: 216px;
     height: 50px;
     border: solid 0.5px #a7a7a7;
     border-radius: 5px;
     background-color: #fff;
     color: #707070;
-    font-size: 14px;
     cursor: pointer;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .submit-button {
@@ -148,17 +145,17 @@ select {
     background-color: #d66b00;
 }
 
-.forgot-password {
+.login-button {
     display: flex;
     flex-direction: row;
     column-gap: 7px;
 }
 
-.forgot-password .login {
+.login-button .login {
     color: #E17100;
 }
 
-.forgot-password a {
+.login-button a {
     text-decoration: none;
     font-size: 14px;
 }
@@ -236,4 +233,62 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Media queries - Breakpoints */
+
+/* Small Devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-header h1 {
+        text-align: center;
+    }
+
+    .form-header h1::after { 
+        display: none;
+    }
+
+    .form-title {
+        margin-top: 20px;
+    }
+    
+    .input-group { 
+        flex-direction: column;
+    }
+
+    .group-1 {
+        max-height: 150px;
+        overflow-y: scroll;
+    }
+
+    .input-box input {
+        margin-right: 10px;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+
+    .hide-fields .input-group-hide {
+        flex-direction: column;
+    }
+}
+
+/* Medium  Devices */
+@media only screen and (max-width: 1024px) {
+    .image {
+        display: none;
+    }
+
+    .form-logo {
+        display: block;
+    }
+
+    .form {
+        width: 100%;
+    }
 }
