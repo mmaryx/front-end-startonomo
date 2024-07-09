@@ -237,11 +237,9 @@ i.bi {
 /*CONTEÚDO*/
 .main-content {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     margin-top: 20px;
     color: var(--content-color);
-    column-gap: 100px;
 }
 
 /*FEED*/
@@ -249,7 +247,6 @@ i.bi {
     display: flex;
     flex-direction: column;
     width: 850px;
-    margin-right: 50px;
     width: 100%;
     border-radius: 10px;
 }
@@ -324,77 +321,10 @@ i.bi {
     cursor: pointer;
 }
 
-.chat {
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    height: 100%;
-    background-color: var(--content-background);
-    border-radius: 5px;
-}
-
-.chat section {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.chat section h3 {
-    color: var(--nav-color);
-    margin-bottom: 10px;
-}
-.chat section h3::after {
-    content: '';
-    display: block; 
-    width: 50px; 
-    height: 2px; 
-    background-color: var(--border);
-    position: absolute;
-    border-radius: 10px;
-}
-
-.chat .chat-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-bottom: 0.5px solid #0000003f;
-    padding: 15px 0px 15px 0px;
-}
-
-.chat .chat-content {
-    display: flex;
-    flex-direction: column;
-    font-size: 17px;
-}
-
-.chat .chat-content label{
-    font-weight: 700;
-    font-size: 17px;
-}
-
-.chat .chat-box .chat-user-icon {
-    margin-right: 10px;
-}
-
-.chat .chat-box .chat-user-icon img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #cacaca;
-}
-
 @media screen and (max-width: 1100px) and (min-width: 850px){
     .nav .nav-links, 
     .startonomo img {
         display: none;
-    }
-
-    .main-content {
-        column-gap: 10px;
-    }
-
-    .chat {
-        width: 500px;
     }
 
     .side-menu {
@@ -406,14 +336,6 @@ i.bi {
     .nav .nav-links, 
     .startonomo img {
         display: none;
-    }
-
-    .main-content {
-        column-gap: 0px;
-    }
-
-    .chat {
-        width: 500px;
     }
     
     .header {
@@ -431,7 +353,6 @@ i.bi {
 }
 
 @media screen and (max-width: 700px) and (min-width: 500px){
-    .chat,
     .nav .nav-links, 
     .startonomo img {
         display: none;
@@ -441,10 +362,6 @@ i.bi {
         margin: 0;
     }
 
-    .main-content {
-        column-gap: 50px;
-    }
-    
     .header {
         height: 150px;
         font-size: 20px;
