@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat&display=swap');
 
 :root {
-    --image: url(../../public/assets/images/header.png);
+    --image: url(../img/header.png);
     --border: #ff8000;
     --nav-color: #ff8000;
     --menu-background: #ffa348;
@@ -19,6 +19,7 @@
     padding: 0%;
     font-family: "Didact Gothic", sans-serif;
     font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -116,8 +117,7 @@ i.bi {
     border-bottom: 0.5px solid var(--border);
 }
 
-.nav .startonomo img,
-.nav .profile-icon img{
+.nav .startonomo img {
    width: 45px; 
 }
 
@@ -149,6 +149,7 @@ i.bi {
     transition: 0.1s;
     text-decoration: underline;
 }
+
 /*BARRA DE PESQUISA + PERFIL*/
 .aside-nav {
     display: flex;
@@ -170,7 +171,8 @@ i.bi {
     padding: 0;
 }
 
-.search-bar #search-icon img{
+.search-bar #search-icon img,
+.search-bar .none img {
     width: 18px;
     height: 18px;
 }
@@ -198,11 +200,6 @@ i.bi {
     outline: 1px solid #E17100;
 }
 
-.profile-icon img:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 50%;
-}
-
 .none {
     display: none;
     width: 18px;
@@ -211,11 +208,6 @@ i.bi {
     background-color: white;
     margin-right: 5px;
     padding: 0;
-}
-
-.search-bar .none img{
-    width: 18px;
-    height: 18px;
 }
 
 /*HEADER*/
@@ -227,7 +219,7 @@ i.bi {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 25px;
 }
 
