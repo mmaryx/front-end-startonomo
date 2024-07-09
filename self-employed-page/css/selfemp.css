@@ -210,3 +210,71 @@ i.bi {
     padding: 0;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+.header img {
+    width: 150px;
+}
+
+.header-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.header-content h1 {
+    font-size: 40px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.bio {
+    width: 100%;
+}
+
+.bio p {
+    width: 50%;
+}
+
+.map {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.map iframe {
+    width: 500px;
+    height: 500px;
+}
