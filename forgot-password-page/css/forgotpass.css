@@ -43,6 +43,10 @@ body {
     justify-content: center;
 }
 
+.form-logo {
+    display: none;
+}
+
 .form-header { 
     margin-bottom: 30px;
 }
@@ -133,4 +137,41 @@ body {
     width: 17px;
     margin-top: 20px;
     opacity: 0.5;
+}
+
+/* Media queries - Breakpoints */
+
+/* Small Devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-header h1 {
+        text-align: center;
+    }
+
+    .form-header h1::after { 
+        display: none;
+    }
+}
+
+/* Medium  Devices */
+@media only screen and (max-width: 1024px) {
+    .image {
+        display: none;
+    }
+
+    .form-logo {
+        display: block;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form-title {
+        margin-top: 20px;
+    }
 }
