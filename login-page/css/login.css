@@ -43,6 +43,10 @@ body {
     justify-content: center;
 }
 
+.form-logo {
+    display: none;
+}
+
 .form-header { 
     margin-bottom: 40px;
 }
@@ -158,4 +162,41 @@ body {
 .sign-up a {
     text-decoration: none;
     font-size: 14px;
+}
+
+/* Media queries - Breakpoints */
+
+/* Small Devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-header h1 {
+        text-align: center;
+    }
+
+    .form-header h1::after { 
+        display: none;
+    }
+}
+
+/* Medium  Devices */
+@media only screen and (max-width: 1024px) {
+    .image {
+        display: none;
+    }
+
+    .form-title {
+        margin-top: 20px;
+    }
+
+    .form-logo {
+        display: block;
+    }
+
+    .form {
+        width: 100%;
+    }
 }
