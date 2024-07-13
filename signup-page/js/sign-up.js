@@ -8,9 +8,13 @@ toggle1.addEventListener('change', function() {
         toggle2.checked = false;
         // Hide fields
         hide_fields.style.display = 'none';
+
+        document.getElementById("hide-fields").removeAttribute('required');
     } else {
         toggle2.checked = true;
         hide_fields.style.display = 'flex'; 
+        
+        document.getElementById("hide-fields").setAttribute('required', 'true');
     }
 });
 
@@ -20,8 +24,14 @@ toggle2.addEventListener('change', function() {
         toggle1.checked = false;
         // Hide fields
         hide_fields.style.display = 'flex';
+
+        document.getElementById("hide-fields").setAttribute('required', 'true');
     } else {
         toggle1.checked = true;
         hide_fields.style.display = 'none';
+
+        document.getElementById("hide-fields").removeAttribute('required');
     }
 });
+
+
