@@ -1,6 +1,6 @@
 const cpfInput = document.getElementById('cpf');
 cpfInput.addEventListener('input', () => {
-    let formattedCpf = cpfInput.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos do valor atual
+    let formattedCpf = cpfInput.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
 
     if (formattedCpf.length > 3) {
         formattedCpf = formattedCpf.substring(0, 3) + '.' + formattedCpf.substring(3);
@@ -17,7 +17,7 @@ cpfInput.addEventListener('input', () => {
 
 //o código ta feio mas ta funcionando <3 :D ;) ;*
 
-const submit_button = document.querySelector('#submit-button').addEventListener('click', () => {
+submit_button.addEventListener('click', () => {
     const cpf = document.getElementById('cpf').value;
     const cpf_digits = cpf.split('');    
     
