@@ -28,16 +28,16 @@
                 <article class="input-group">
                     <div class="group-1">
                         <div class="input-box">
-                            <input type="text" placeholder="Primeiro Nome" required>
+                            <input type="text" id="firstname" placeholder="Primeiro Nome" required>
                         </div>
                         <div class="input-box">
-                            <input type="text" placeholder="Último Nome" required>
+                            <input type="text" id="lastname" placeholder="Último Nome" required>
                         </div>
                         <div class="input-box">
-                            <input type="number" placeholder="CPF" required>
+                            <input type="text" id="cpf" maxlength="14" placeholder="CPF" required>
                         </div>
                         <div class="input-box">
-                            <input type="number" placeholder="Celular" required>
+                            <input type="tel" id="tel" maxlength="15" placeholder="Celular" required>
                         </div>
                     </div>
 
@@ -46,13 +46,13 @@
                             <input type="email" placeholder="E-mail" required>
                         </div>
                         <div class="input-box">
-                            <input type="number" placeholder="CEP" required>
+                            <input type="text" id="cep" maxlength="9" placeholder="CEP" required>
                         </div>
                         <div class="input-box">
-                            <input type="password" placeholder="Senha" required>
+                            <input type="password" id="password" placeholder="Senha" required>
                         </div>
                         <div class="input-box">
-                            <input type="password" placeholder="Confirmar Senha" required>
+                            <input type="password" id="confirmPassword" placeholder="Confirmar Senha" required>
                         </div>
                     </div>
                 </article>
@@ -92,7 +92,7 @@
                 </article>
         
                 <div class="submit-button">
-                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="Cadastrar" id="submit-button">
                 </div>
             </form>
             <div class="login-button">
@@ -103,5 +103,7 @@
     </main>
     
     <script src="../js/sign-up.js"></script>
+    <script src="../js/cpf-validation.js"></script>
+    <script src="../js/validation.js"></script>
 </body>
 </html>
