@@ -211,25 +211,8 @@ i.bi {
     padding: 0;
 }
 
-/*----------------------------*/
-
 .container {
     display: flex;
-<<<<<<< HEAD
-    align-items: center;
-    justify-content: center;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 100px;
-}
-
-.content {
-    width: 25%;
-=======
     flex-direction: row;
     margin-top: 40px;    
 }
@@ -239,22 +222,17 @@ i.bi {
     flex-direction: column;
     align-items: center;
     width: 50%;
->>>>>>> b2a1648 (fix: fix container align)
 }
 
 .header {
     display: flex;
     flex-direction: row;
-<<<<<<< HEAD
-    height: 150px;
-=======
     width: 70%;
     height: 30%;
->>>>>>> b2a1648 (fix: fix container align)
 }
 
 .header img {
-    height: 100%;
+    width: 150px;
 }
 
 .header-content {
@@ -266,18 +244,18 @@ i.bi {
 }
 
 .header-content h1 {
-    font-size: 35px;
-    color: #2b2b2b;
-}
-
-.header-content p {
-    color: #aaaaaa;
-    margin-left: 2px;
+    font-size: 40px;
 }
 
 .bottom {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom .stars img {
+    width: 100px;
 }
 
 .bottom button {
@@ -291,8 +269,6 @@ i.bi {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
 .bio {
     width: 70%;
     display: flex;
@@ -301,12 +277,8 @@ i.bi {
     text-align: justify;
 }
 
->>>>>>> b2a1648 (fix: fix container align)
 .infos, .bio-p {
-    margin-top: 40px;
-    text-align: justify;
-    line-height: 30px;
-    width: 92%;
+    margin-top: 25px;
 }
 
 .infos .box {
@@ -320,12 +292,6 @@ i.bi {
     margin-right: 10px;
 }
 
-<<<<<<< HEAD
-.map iframe {
-    width: 550px;
-    height: 550px;
-}
-=======
 .map {
     width: 50%;
     display: flex;
@@ -336,4 +302,3 @@ i.bi {
     width: 70%;
     height: 450px;
 }
->>>>>>> b2a1648 (fix: fix container align)
