@@ -21,11 +21,10 @@
     font-weight: 400;
     font-style: normal;
     color: var(--content-color);
+    font-size: 18px;
 }
 
 body {
-    height: 100vh;
-    font-size: 18px;
     margin: 10px 20px 10px 20px;
 }
 
@@ -216,6 +215,7 @@ i.bi {
 
 .container {
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
 }
@@ -229,12 +229,28 @@ i.bi {
 
 .content {
     width: 25%;
+=======
+    flex-direction: row;
+    margin-top: 40px;    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+>>>>>>> b2a1648 (fix: fix container align)
 }
 
 .header {
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     height: 150px;
+=======
+    width: 70%;
+    height: 30%;
+>>>>>>> b2a1648 (fix: fix container align)
 }
 
 .header img {
@@ -265,7 +281,7 @@ i.bi {
 }
 
 .bottom button {
-    width: 40%;
+    width: 50%;
     height: 25px;
     color: #fff;
     border: none;
@@ -275,6 +291,17 @@ i.bi {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+.bio {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+>>>>>>> b2a1648 (fix: fix container align)
 .infos, .bio-p {
     margin-top: 40px;
     text-align: justify;
@@ -293,7 +320,20 @@ i.bi {
     margin-right: 10px;
 }
 
+<<<<<<< HEAD
 .map iframe {
     width: 550px;
     height: 550px;
 }
+=======
+.map {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.map iframe {
+    width: 70%;
+    height: 450px;
+}
+>>>>>>> b2a1648 (fix: fix container align)
