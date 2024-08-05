@@ -210,3 +210,78 @@ i.bi {
     margin-right: 5px;
     padding: 0;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 30%;
+}
+
+.header img {
+    width: 150px;
+}
+
+.header-content h1 {
+    font-size: 20px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom .stars img {
+    width: 100px;
+}
+
+.bottom button {
+    width: 50%;
+    height: 25px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #E17100;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.bio {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.infos, .bio-p {
+    margin-top: 25px;
+}
+
+.infos .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.infos .box label {
+    margin-right: 10px;
+}
