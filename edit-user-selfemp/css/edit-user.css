@@ -211,3 +211,20 @@ i.bi {
     padding: 0;
 }
 
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+}
