@@ -62,10 +62,8 @@ body {
     left: 0;
     top: 0;
     width: 300px;
-    height: 100vh;
     background-color: var(--menu-background);
-    padding-top: 30px;
-    padding-left: 25px;
+    padding: 30px 0px 30px 25px;
     margin-top: 74px;
     margin-left: -340px;
     transition: all ease .2s;
@@ -109,11 +107,14 @@ i.bi {
 
 /*LOGO + LINKS*/
 .nav {
+    top: 0;
+    position: sticky;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 5px;
+    padding: 10px 0px;
     border-bottom: 0.5px solid var(--border);
 }
 
@@ -352,31 +353,21 @@ i.bi {
     }
 }
 
-@media screen and (max-width: 700px) and (min-width: 500px){
+/* Small Devices */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .nav .nav-links, 
     .startonomo img {
         display: none;
-    }
-
-    .feed {
-        margin: 0;
-    }
-
-    .header {
-        height: 150px;
-        font-size: 20px;
     }
 
     .header article h1 {
         font-size: 35px;
     }
 
-    .side-menu {
-        display: block;
-    }
-} 
-
-@media screen and (max-width: 570px) and (min-width: 500px) {
     .search-bar input {
         position: absolute;
         width: 0;
@@ -405,4 +396,4 @@ i.bi {
     .feed .content .user-comment {
         font-size: 16px;
     }
-}
+} 
