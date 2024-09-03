@@ -321,33 +321,20 @@ i.bi {
     width: 15px;
     cursor: pointer;
 }
+/* Media queries - Breakpoints */
 
-@media screen and (max-width: 1100px) and (min-width: 850px){
+/* Medium Devices */
+@media screen and (max-width: 1024px) {
     .nav .nav-links, 
     .startonomo img {
         display: none;
     }
 
-    .side-menu {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 850px) and (min-width: 700px) {
-    .nav .nav-links, 
-    .startonomo img {
-        display: none;
-    }
-    
     .header {
         height: 150px;
         font-size: 20px;
     }
 
-    .header article h1 {
-        font-size: 35px;
-    }
-    
     .side-menu {
         display: block;
     }
