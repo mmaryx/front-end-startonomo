@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+:root {
+    --orange: #f17900;
+    --hover: #fc8f22;
+    --text: #8D8D8D;
+    --border: #cfcfcf;
+    --disable-star: #b6b4b4;
+    --active: #eeae00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: var(--text);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    width: 570px;
+    height: 480px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* TITLE E SUBTITLE*/
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .title h1 {
+    font-size: 40px;
+    color: var(--orange);
+    margin-bottom: 10px;
+}
+
+.header .subtitle {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+}
+
+.header .subtitle p {
+    font-size: 15px;
+}
+
+/* RATING CONTAINER */
+.rating-container {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.rating-container .star-rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rating-container .star-rating li {
+    list-style-type: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: var(--active);
+    font-size: 70px;
+}
+
+.star-icon::before {
+    content: "\2605";
+}
+
+.star-icon.active ~ .star-icon::before {
+    color: var(--disable-star);
+}
+
+.star-rating:hover .star-icon::before {
+    color: var(--active);
+}
+
+.star-icon:hover  ~ .star-icon::before {
+    color: var(--disable-star);
+}
+
+/* TEXT AREA */
+.comment {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+label {
+    font-size: 15px;
+    margin: 0 0 10px 10px;
+}
+
+textarea {
+    resize: none;
+    border: solid 1px  var(--border);
+    border-radius: 5px;
+    font-size: 13px;
+    height: 100px;
+    padding: 10px;
+}
+
+textarea:focus {
+    outline: solid 1px var(--orange);
+    border: none;
+}
+
+/* BOTÃO */
+.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button input {
+    width: 40%;
+    height: 35px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--orange);
+    font-size: 17px;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+.button input:hover {
+    background-color: var(--hover);
+    transition: 0.1s;
+}
