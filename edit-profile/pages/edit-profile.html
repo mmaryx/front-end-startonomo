@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/edit-profile.css">
+    <title>Editar Perfil | Startônomo</title>
+</head>
+<body>
+    <nav class="nav">
+        <section class="nav-bar">
+            <figure class="startonomo">
+               <a href="home-page.html"><img src="../img/logo.png" alt="Startônomo"></a>
+            </figure>
+
+            <section class="side-menu">
+                <input type="checkbox" class="menu-faketrigger">
+                <article class="exp-btn">
+                    <i class="bi bi-list" id="menu-icon"></i>
+                </article>
+                <ul class="menu-ul">
+                    <li class="menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-house-door-fill"></i></span>
+                            <span class="link-text">Início</span>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-person-fill"></i></span>
+                            <span class="link-text">Perfil</span>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-list-ul"></i></span>
+                            <span class="link-text">Categorias</span> <!--remover isso na visão de autonomo -->
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <ul class="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Categorias</a></li> <!--remover isso na visão de autonomo -->
+            </ul>
+        </section>
+        
+        <section class="name">
+            <h1>STARTÔNOMO</h1>
+        </section>
+
+        <aside class="aside-nav">
+            <form class="search-bar">
+                <input type="text" name="" id="" placeholder="Perfil, Categoria...">
+                <button type="submit" id="search-icon">
+                    <img src="../img/search-icon.png">
+                </button>
+                <button type="button" class="none">
+                    <img src="../img/search-icon.png">
+                </button>
+            </form>
+        </aside>
+    </nav>
+
+    <section class="form">
+        <form action="#" method="post">
+            <!-- <div class="form-title">
+                <h1 class="title">Editar Perfil</h1>
+            </div> -->
+
+            <article class="input-group">
+                <div class="header">
+                    <div class="image-box">
+                        <label for=""></label>
+                        <img src="../img/user (1).png" alt="" srcset="">
+                    </div>
+                </div>
+                
+                <div class="all-inputs">
+                    <div class="input-box">
+                        <label for="">Primeiro nome</label>
+                        <input type="text" autocomplete="off" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="">Último nome</label>
+                        <input type="text" autocomplete="off" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="">CEP</label>
+                        <input type="number" autocomplete="off" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="">Rua</label>
+                        <input type="text" autocomplete="off" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="">Número</label>
+                        <input type="number" autocomplete="off" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="">Celular</label>
+                        <input type="number" autocomplete="off" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="">E-mail</label>
+                        <input type="email" autocomplete="off" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="">Região de atendimento</label>
+                        <input type="text" autocomplete="off" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="">Escolaridade</label>
+                        <input type="text" autocomplete="off" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="">Descrição</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                </div>
+            </article>
+
+            <article class="buttons">
+                <div class="save-button">
+                    <input type="submit" value="Salvar">
+                </div>
+                <div class="cancel-button">
+                    <button type="button"><a href="../../self-employed-page/pages/selfemp.html">Cancelar</a></button>
+                </div>
+            </article>
+        </form>
+    </section>
+
+    <script src="../js/search-bar.js"></script>
+</body>
+</html>

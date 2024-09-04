@@ -211,12 +211,12 @@ i.bi {
     padding: 0;
 }
 
-.teste {
+.container {
     display: flex;
     justify-content: center;
 }
 
-.container {
+.content {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
