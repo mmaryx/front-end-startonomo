@@ -218,7 +218,7 @@ i.bi {
 .form {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 form {
@@ -226,12 +226,12 @@ form {
     flex-direction: column;
     width: 50%;
 
-    & .form-title .title{
+    /* & .form-title .title{
         font-size: 25px;
         margin-bottom: 40px;
-    }
+    } */
 
-    & .form-title .title::after { 
+    /* & .form-title .title::after { 
         content: '';
         display: block; 
         width: 60px;
@@ -240,7 +240,7 @@ form {
         margin: 0 auto; 
         position: absolute;
         border-radius: 10px;
-    }
+    } */
 }
 
 label {
@@ -270,6 +270,7 @@ input:focus {
 
         & img {
             width: 130px;
+            margin-bottom: 20px;
         }
 
         & .input-box {
@@ -333,7 +334,7 @@ textarea:focus {
         justify-content: center;
         width: 30%;
 
-        & input {
+        & input, button, a {
             width: 180px;
             text-align: center;
             border: none;
@@ -343,22 +344,23 @@ textarea:focus {
             padding-bottom: 5px;
             height: 30px;
             cursor: pointer;
+            text-decoration: none;
         }
 
-        & input:hover {
+        & button:hover {
             background-color: #ff8914;
             transition: 0.1s;
         }
-    }
 
-    & .save-button input {
-        background-color: white;
-        color: var(--nav-color);
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
+        & input:hover {
+            background-color: #faf9f9c4;
+            transition: 0.1s;
+        }
 
-    & .save-button input:hover {
-        background-color: #faf9f9c4;
-        transition: 0.1s;
-    }
+        input {
+            background-color: white;
+            color: var(--nav-color);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+    }  
 }
