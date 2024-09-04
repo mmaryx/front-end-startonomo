@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação | Startônomo</title>
+    <link rel="stylesheet" href="../css/star-rating.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <div class="title">
+                <h1>Avalie o serviço</h1>
+            </div>
+            <div class="subtitle">
+                <p>Serviço realizado por</p>
+                <p>Nome do Autonomo</p>
+            </div>
+        </header>
+        <section class="rating-container">
+            <ul class="star-rating">
+                <li class="star-icon active" rating-data="1"></li>
+                <li class="star-icon" rating-data="2"></li>
+                <li class="star-icon" rating-data="3"></li>
+                <li class="star-icon" rating-data="4"></li>
+                <li class="star-icon" rating-data="5"></li>
+            </ul>
+        </section>
+        <section class="comment">
+            <label for="comment">Deixe seu feedback aqui:</label>
+            <textarea name="comment" id="comment" maxlength="100"></textarea>
+        </section>
+        <section class="button">
+            <input type="submit" value="Enviar">
+        </section>
+    </main>
+
+    <script src="../js/rating.js"></script>
+</body>
+</html>
