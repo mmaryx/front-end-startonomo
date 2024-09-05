@@ -32,8 +32,8 @@ body {
     align-items: center;
     justify-content: center;
     row-gap: 30px;
-    width: 570px;
-    height: 480px;
+    width: 35%;
+    height: 500px;
     border-radius: 10px;
     padding: 30px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -54,12 +54,17 @@ body {
 
 .header .subtitle {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     column-gap: 4px;
 }
 
 .header .subtitle p {
-    font-size: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header .subtitle strong {
+    font-weight: bold;
 }
 
 /* RATING CONTAINER */
@@ -149,4 +154,31 @@ textarea:focus {
 .button input:hover {
     background-color: var(--hover);
     transition: 0.1s;
+}
+
+/* Media queries - Breakpoints */
+/* Medium  Devices */
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 50%;
+    }
+}
+
+/* Small Devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .rating-container .star-rating li {
+        font-size: 60px;
+    }
+
+    .button {
+        margin-bottom: 20px;
+    }
 }
