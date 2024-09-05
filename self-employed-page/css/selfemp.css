@@ -26,7 +26,6 @@
 }
 
 body {
-    height: 100vh;
     margin: 10px 20px;
 }
 
@@ -109,12 +108,13 @@ i.bi {
 
 /*LOGO + LINKS*/
 .nav {
-    width: 100%;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 5px;
+    padding: 10px 0px;
+    margin-bottom: 20px;
     border-bottom: 0.5px solid var(--border);
 }
 
@@ -197,6 +197,7 @@ i.bi {
 .search-bar input:hover {
     background-color: var(--search-input-hover);
 }
+
 .search-bar input:focus-visible {
     outline: 1px solid #E17100;
 }
@@ -211,12 +212,10 @@ i.bi {
     padding: 0;
 }
 
-
 .header {
     display: flex;
     flex-direction: row;
     width: 70%;
-    height: 30%;
 }
 
 .header img {
@@ -235,16 +234,19 @@ i.bi {
     font-size: 40px;
 }
 
+/* Content */
 .container {
     display: flex;
-    margin-top: 40px;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 60%;
 }
 
 .bottom {
@@ -279,7 +281,7 @@ i.bi {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: justify;
+    text-align: left;
 }
 
 .infos, .bio-p {
@@ -289,18 +291,21 @@ i.bi {
 .infos .box {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin-top: 15px;
 }
 
 .infos .box label {
     margin-right: 10px;
+    font-weight: bold;
 }
 
 .map {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
+    margin: 20px 0px;
 }
 
 .map iframe {
@@ -312,6 +317,11 @@ i.bi {
 
 /* Medium Devices */
 @media screen and (max-width: 1024px) {
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
     .nav .nav-links, 
     .startonomo img {
         display: none;
@@ -320,6 +330,25 @@ i.bi {
     .side-menu {
         display: block;
     }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        margin-bottom: 40px;
+    }
+
+    .content,
+    .map {
+        width: 100%;
+    }
+    
+    .map {
+        margin-bottom: 20px;
+    }
+
 }
 
 /* Small Devices */
@@ -352,4 +381,25 @@ i.bi {
     .none {
         display: block;
     }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header .bottom {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bio {
+        width: 100%;
+    }
+
+    .map iframe {
+        width: 100%;
+    }
+
 } 
