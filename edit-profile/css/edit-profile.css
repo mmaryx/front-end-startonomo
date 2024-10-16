@@ -2,13 +2,14 @@
 
 :root {
     --image: url(../img/header.png);
-    --border: #ff8000;
-    --nav-color: #ff8000;
     --menu-background: #ffa348;
     --nav-hover: #ffa851;
     --search-input: #f0f0f0;
     --search-input-hover: #e9e9e9;
     --focus-visible: #ff8000;
+    --button: #E37300; 
+    --white: #fff;
+    --alert-button: #BF2E00;
     --content-background: #ebebeb;
     --content-color: #4d4d4d;
     --time-color: #5a5a5a;
@@ -29,7 +30,6 @@
 body {
     margin: 10px 20px 10px 20px;
     height: 100vh;
-    overflow-y: hidden;
 }
 
 /*Side Menu*/
@@ -87,7 +87,7 @@ body {
     display: flex;
     align-items: center;
     column-gap: 10px;
-    color: #fff;
+    color: var(--white);
     font-size: 20px;
     transition: all ease .2s;
 }
@@ -119,7 +119,7 @@ i.bi {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 5px;
-    border-bottom: 0.5px solid var(--border);
+    border-bottom: 0.5px solid var(--nav-hover);
 }
 
 .nav .startonomo img {
@@ -215,3 +215,101 @@ i.bi {
     padding: 0;
 }
 
+.form-content {
+    display: flex;
+    justify-content: center;
+}
+
+.form-content .forms {
+    display: flex;  
+    flex-direction: column; 
+    margin-top: 40px;
+    max-width: 90%; 
+}
+
+.forms form {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+form .content-group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 70%;
+}
+
+.content-group .title h1 {
+    font-size: 20px;
+}
+
+.content-group .all-inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.content-group .text {
+    width: 60%;
+
+    & p {
+        font-size: 16px;
+    }
+}
+
+/* INPUTS */
+.all-inputs .input-box input, textarea{
+    margin: 5px 0;
+    padding: 0 10px 0;
+    width: 216px;
+    height: 50px;
+    border: solid 0.5px #a7a7a7;
+    border-radius: 5px;
+    background-color: var(--white);
+    color: #707070;
+    font-size: 14px;
+}
+
+textarea {
+    padding-top: 15px;
+}
+
+.input-box input:hover, textarea:hover, select:hover {
+    background-color: var();
+}
+
+.input-box input:focus-visible, textarea:focus-visible, select:hover {
+    outline: 0.5px solid var(--focus-visible);
+}
+
+/* BUTTONS */
+form .button .save-button input {
+    background-color: var(--button);
+    color: var(--white);
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+form .button .delete-button input {
+    background-color: var(--alert-button);
+    color: var(--white);
+    border: none;
+    width: 130px;
+    height: 33px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
