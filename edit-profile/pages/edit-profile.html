@@ -64,78 +64,119 @@
         </aside>
     </nav>
 
-    <section class="form">
-        <form action="#" method="post">
-            <!-- <div class="form-title">
-                <h1 class="title">Editar Perfil</h1>
-            </div> -->
+    <section class="form-content">
+        <div class="forms">
+            <form action="#" method="post" id="infos" >
+                <article class="content-group">
+                    <div class="title">
+                        <h1>Informações do perfil</h1>
+                    </div>
+                    
+                    <div class="all-inputs">
+                        <div class="input-box">
+                            <input type="text" placeholder="Primeiro nome" required>
+                        </div>
 
-            <article class="input-group">
-                <div class="header">
-                    <div class="image-box">
-                        <label for=""></label>
-                        <img src="../img/user (1).png" alt="" srcset="">
-                    </div>
-                </div>
-                
-                <div class="all-inputs">
-                    <div class="input-box">
-                        <label for="">Primeiro nome</label>
-                        <input type="text" autocomplete="off" required>
-                    </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Último nome" required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <input type="number" placeholder="Celular" required>
+                        </div>
 
-                    <div class="input-box">
-                        <label for="">Último nome</label>
-                        <input type="text" autocomplete="off" required>
-                    </div>
-                    
-                    <div class="input-box">
-                        <label for="">CEP</label>
-                        <input type="number" autocomplete="off" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="">Rua</label>
-                        <input type="text" autocomplete="off" required>
-                    </div>
-                    
-                    <div class="input-box">
-                        <label for="">Número</label>
-                        <input type="number" autocomplete="off" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="">Celular</label>
-                        <input type="number" autocomplete="off" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="">E-mail</label>
-                        <input type="email" autocomplete="off" required>
-                    </div>
-                    
-                    <div class="input-box">
-                        <label for="">Região de atendimento</label>
-                        <input type="text" autocomplete="off" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="">Escolaridade</label>
-                        <input type="text" autocomplete="off" required>
-                    </div>
-                    
-                    <div class="input-box">
-                        <label for="">Descrição</label>
-                        <textarea name="" id=""></textarea>
-                    </div>
-                </div>
-            </article>
+                        <div class="input-box">
+                            <input type="email" placeholder="E-mail" required>
+                        </div>
 
-            <article class="buttons">
-                <div class="save-button">
-                    <input type="submit" value="Salvar">
-                </div>
-                <div class="cancel-button">
-                    <button type="button"><a href="../../self-employed-page/pages/selfemp.html">Cancelar</a></button>
-                </div>
-            </article>
-        </form>
+                        <div class="input-box">
+                            <input type="number" placeholder="CEP" required>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="text" placeholder="Rua" required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <input type="number" placeholder="Número" required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <textarea 
+                                name="" 
+                                id="" 
+                                placeholder="Descrição"
+                                style="resize: none"
+                            ></textarea>
+                        </div>
+                        
+                        <div class="input-box">
+                            <input type="text" placeholder="Escolaridade" required>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="text" placeholder="Região de atendimento" required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <input type="text" placeholder="Área de atuação" required>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="button">
+                    <div class="save-button">
+                        <input type="submit" value="Salvar">
+                    </div>
+                </article>
+            </form>
+
+            <form action="#" method="post" id="password" >
+                <article class="content-group">
+                    <div class="title">
+                        <h1>Alterar senha</h1>
+                    </div>
+                    
+                    <div class="all-inputs">
+                        <div class="input-box">
+                            <input type="text" placeholder="Senha atual" required>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="text" placeholder="Nova senha" required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <input type="number" placeholder="Confirmar senha" required>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="button">
+                    <div class="save-button">
+                        <input type="submit" value="Salvar">
+                    </div>
+                </article>
+            </form>
+
+            <form action="#" method="post" id="delete" >
+                <article class="content-group">
+                    <div class="title">
+                        <h1>Deletar minha conta</h1>
+                    </div>
+                    
+                    <div class="text">
+                        <p>Depois que sua conta for excluída, todos os seus recursos e dados serão excluídos permanentemente. Antes de excluir sua conta, faça o download de todos os dados ou informações que deseja reter.</p>
+                    </div>
+                </article>
+
+                <article class="button">
+                    <div class="delete-button">
+                        <input type="submit" value="Deletar conta">
+                    </div>
+                </article>
+            </form>
+        </div>
     </section>
 
     <script src="../js/search-bar.js"></script>
