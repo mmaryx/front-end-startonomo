@@ -147,6 +147,33 @@ i.bi {
     transition: 0.1s;
 }
 
+.nav-links .dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 25px;  
+    background-color: #f8f8f8; 
+    padding: 20px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    overflow: hidden; 
+    transition: max-height 0.3s ease; 
+    max-height: 0; 
+}
+
+.dropdown li {
+    list-style: none;
+    padding: 8px;
+    color: #A8A8A8;
+    font-size: 16px;
+}
+
+.dropdown li:hover {
+    color: #959595;
+    cursor: pointer;
+}
+
 /*BARRA DE PESQUISA + PERFIL*/
 .search {
     display: flex;
