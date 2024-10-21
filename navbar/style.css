@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat&display=swap');
 
 :root {
-    --image: url(../img/header.png);
     --border: #ff8000;
     --nav-color: #ff8000;
     --menu-background: #ffa348;
@@ -146,11 +145,10 @@ i.bi {
 .nav .nav-links a:hover { 
     color: var(--nav-hover);
     transition: 0.1s;
-    text-decoration: underline;
 }
 
 /*BARRA DE PESQUISA + PERFIL*/
-.aside-nav {
+.search {
     display: flex;
     flex-direction: row;
 }
@@ -209,128 +207,10 @@ i.bi {
     padding: 0;
 }
 
-/*HEADER*/
-.header {
-    background-image: var(--image);
-    background-size: cover;
-    margin-top: 20px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 25px;
-}
-
-.header article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header article h1 {
-    font-size: 40px;
-    font-weight: 700;
-}
-
-/*CONTEÚDO*/
-.main-content {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    color: var(--content-color);
-}
-
-/*FEED*/
-.feed {
-    display: flex;
-    flex-direction: column;
-    width: 850px;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.feed .content {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: var(--content-background);
-    border-radius: 5px;
-}
-
-.content-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.content-header button {
-    border: none;
-    background-color: var(--content-background);
-}
-
-.feed .content .user-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 10px;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--nav-color);
-    margin-bottom: 15px;
-}
-
-.feed .content .user-header .header-text .time {
-    font-size: 13px;
-    color: var(--time-color);
-
-}
-
-.feed .content .user-header .header-text  {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.feed .content .user-header img {
-    width: 40px;
-    border-radius: 50%;
-    background-color: #cacaca;
-    cursor: pointer;
-}
-
-.feed .content .user-comment {
-    margin-left: 5px;
-    margin-bottom: 10px;
-    font-size: 17px;
-}
-
-.feed .icon-footer {
-    margin-left: 5px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 15px;
-}
-
-.feed .icon-footer img{
-    width: 15px;
-    cursor: pointer;
-}
-/* Media queries - Breakpoints */
-
-/* Medium Devices */
 @media screen and (max-width: 1024px) {
     .nav .nav-links, 
     .startonomo img {
         display: none;
-    }
-
-    .header {
-        height: 150px;
-        font-size: 20px;
     }
 
     .side-menu {
@@ -349,10 +229,6 @@ i.bi {
         display: none;
     }
 
-    .header article h1 {
-        font-size: 35px;
-    }
-
     .search-bar input {
         position: absolute;
         width: 0;
@@ -362,9 +238,7 @@ i.bi {
         transition: all ease .2s;
     }
 
-    .header,
-    #search-icon,
-    .profile-icon {
+    #search-icon {
         display: none;
     }
 
@@ -372,13 +246,5 @@ i.bi {
     .side-menu,
     .none {
         display: block;
-    }
-
-    .feed .content .user-header img {
-        width: 35px;
-    }
-
-    .feed .content .user-comment {
-        font-size: 16px;
     }
 } 
