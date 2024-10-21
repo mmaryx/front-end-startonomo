@@ -1,7 +1,21 @@
 const btnSub = document.querySelector('#search-icon');
 const searchBar = document.querySelector('.search-bar input');
 const navName = document.querySelector('.name');
+
 const dropdown = document.querySelector('.dropdown');
+const sideDropdown = document.querySelector('.side-dropdown');
+
+const sideDropdownBtn = document.querySelector('#side-dropdown').addEventListener('click', function() {
+    if (sideDropdown.style.display === 'block') {
+        sideDropdown.style.maxHeight = '0'; 
+        setTimeout(() => {
+            sideDropdown.style.display = 'none'; 
+        }, 300); 
+    } else {
+        sideDropdown.style.display = 'block'; 
+        sideDropdown.style.maxHeight = sideDropdown.scrollHeight + 'px'; 
+    }
+})
 
 const dropdownBtn = document.querySelector('#dropdown').addEventListener('click', function() {
     if (dropdown.style.display === 'block') {
