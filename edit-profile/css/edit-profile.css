@@ -334,6 +334,29 @@ form .button .delete-button input {
     .side-menu {
         display: block;
     }
+
+    form .content-group {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .all-inputs {
+        justify-content: center;
+    }
+
+    #all-inputs-scrollable {
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+
+    .button, .text {
+        margin: auto;
+    }
+
 }
 
 /* Small Devices */
@@ -366,5 +389,4 @@ form .button .delete-button input {
     .none {
         display: block;
     }
-    
 } 
