@@ -62,10 +62,8 @@ body {
     left: 0;
     top: 0;
     width: 300px;
-    height: 100vh;
     background-color: var(--menu-background);
-    padding-top: 30px;
-    padding-left: 25px;
+    padding: 30px 0px 30px 25px;
     margin-top: 74px;
     margin-left: -340px;
     transition: all ease .2s;
@@ -109,12 +107,13 @@ i.bi {
 
 /*LOGO + LINKS*/
 .nav {
-    width: 100%;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 5px;
+    padding: 10px 0px;
+    margin-bottom: 20px;
     border-bottom: 0.5px solid var(--border);
 }
 
@@ -310,5 +309,69 @@ i.bi {
         margin-top: 2px;
         font-size: 18px;
         line-height: 25px;
+    }
+}
+
+/* Media queries - Breakpoints */
+
+/* Medium Devices */
+@media screen and (max-width: 1024px) {
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .nav .nav-links, 
+    .startonomo img {
+        display: none;
+    }   
+
+    .side-menu {
+        display: block;
+    }
+
+    .content {
+        width: 50%;
+    }
+
+    .header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header figure {
+        margin-bottom: 20px;
+    }
+
+}
+/* Small Devices */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav .nav-links, 
+    .startonomo img {
+        display: none;
+    }
+
+    .search-bar input {
+        position: absolute;
+        width: 0;
+        right: 0;
+        margin-right: -260px;
+        opacity: 0;
+        transition: all ease .2s;
+    }
+
+    #search-icon,
+    .profile-icon {
+        display: none;
+    }
+
+    .name,
+    .side-menu,
+    .none {
+        display: block;
     }
 }
