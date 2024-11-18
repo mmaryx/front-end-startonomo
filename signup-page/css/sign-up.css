@@ -11,10 +11,10 @@
 }
 
 body {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: hidden;
 }
 
 .container {
@@ -25,6 +25,7 @@ body {
 
 .image {
     width: 50%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -124,6 +125,7 @@ select {
     margin-bottom: 20px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -139,6 +141,12 @@ select {
     cursor: pointer;
 }
 
+.submit-button div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 7px;
+}
+
 .submit-button input:hover {
     background-color: #d66b00;
 }
@@ -149,13 +157,15 @@ select {
     column-gap: 7px;
 }
 
-.login-button .login {
+.login {
     color: #E17100;
+    text-decoration: underline;
 }
 
-.login-button a {
+.submit-button div a {
     text-decoration: none;
     font-size: 14px;
+    margin-top: 14px;
 }
 
 /*TOGGLE SWITCH STYLE*/
